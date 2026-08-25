@@ -1,0 +1,86 @@
+{
+  "columbia-street-vancouver-wa": {
+    "src": "/images/columbia-street-vancouver-wa.webp",
+    "width": 960,
+    "height": 720,
+    "source": "Columbia_Street,_Vancouver_WA.jpg"
+  },
+  "contemporary-bathroom": {
+    "src": "/images/contemporary-bathroom.webp",
+    "width": 960,
+    "height": 1189,
+    "source": "Contemporary_bathroom.jpg"
+  },
+  "dirty-residential-bathroom-in-america": {
+    "src": "/images/dirty-residential-bathroom-in-america.webp",
+    "width": 960,
+    "height": 720,
+    "source": "Dirty_residential_bathroom_in_America.jpg"
+  },
+  "farmers-market-vancouver-wa": {
+    "src": "/images/farmers-market-vancouver-wa.webp",
+    "width": 960,
+    "height": 720,
+    "source": "Farmers_Market_Vancouver,_WA.png"
+  },
+  "vancouver-wa-firehouse-glass-vancouver-national-bank-building-01": {
+    "src": "/images/vancouver-wa-firehouse-glass-vancouver-national-bank-building-01.webp",
+    "width": 960,
+    "height": 638,
+    "source": "Vancouver,_WA_-_Firehouse_Glass_-_Vancouver_National_Bank_Building_01.jpg"
+  },
+  "vancouver-washington-october-2020-229": {
+    "src": "/images/vancouver-washington-october-2020-229.webp",
+    "width": 960,
+    "height": 720,
+    "source": "Vancouver,_Washington,_October_2020_-_229.jpg"
+  },
+  "vancouver-washington-october-2020-254": {
+    "src": "/images/vancouver-washington-october-2020-254.webp",
+    "width": 960,
+    "height": 1280,
+    "source": "Vancouver,_Washington,_October_2020_-_254.jpg"
+  },
+  "vancouver-wa-aerial-june-2024-waterfront": {
+    "src": "/images/vancouver-wa-aerial-june-2024-waterfront.webp",
+    "width": 960,
+    "height": 411,
+    "source": "Vancouver_WA_Aerial,_June_2024_waterfront.jpg"
+  },
+  "clean-kitchen-remodel": {
+    "src": "/images/clean-kitchen-remodel.webp",
+    "width": 2000,
+    "height": 1493,
+    "source": "clean-kitchen-remodel.jpg"
+  },
+  "cleaner-hero": {
+    "src": "/images/cleaner-hero.webp",
+    "width": 1200,
+    "height": 2400,
+    "source": "cleaner-hero.png"
+  },
+  "cleaner-in-kitchen": {
+    "src": "/images/cleaner-in-kitchen.webp",
+    "width": 2000,
+    "height": 1493,
+    "source": "cleaner-in-kitchen.jpg"
+  },
+  "cleaner-wiping-furniture": {
+    "src": "/images/cleaner-wiping-furniture.webp",
+    "width": 2000,
+    "height": 1493,
+    "source": "cleaner-wiping-furniture.jpg"
+  },
+  "cleaner-with-apron": {
+    "src": "/images/cleaner-with-apron.webp",
+    "width": 1080,
+    "height": 1920,
+    "source": "cleaner-with-apron.png"
+  },
+  "vancouver-residential-street": {
+    "src": "/images/vancouver-residential-street.webp",
+    "width": 1920,
+    "height": 1072,
+    "source": "vancouver-residential-street.jpg"
+  }
+}

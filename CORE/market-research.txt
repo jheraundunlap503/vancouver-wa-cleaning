@@ -1,0 +1,34 @@
+Phase 1 first slice is done: scaffold, homepage, move-out cleaning. Build is green, all content gates pass, everything sits at review_flags: pending waiting on you.
+
+One thing you need to know
+The brief had the wrong statute. RCW 59.18.020 is not the security deposit law. It is "Rights and remedies — Obligation of good faith imposed." I verified this against the statute text before writing the page.
+
+The correct sections are RCW 59.18.280 (statement and refund, the ordinary-wear bar, the penalties) and RCW 59.18.260 (deposit conditions, move-in checklist). The page cites 59.18.280. Citing 59.18.020 as deposit law on a page whose whole value is legal credibility would have been the kind of error a competitor screenshots.
+
+I corrected CLAUDE.md so no future session repeats it. Two related findings baked into the page and the docs:
+
+The statute says the landlord has 30 days. Several AG pages still say 21. The page cites the statute for the deadline and notes the discrepancy, which reads as authority rather than error.
+atg.wa.gov returns 403 to every automated request — my link checker and WebFetch both. It is a bot block, not a dead page. The validator treats 401/403/405/406/429 as a warning, not a failure, otherwise the mandatory atg.wa.gov citation could never pass its own gate.
+What's live
+Scaffold — Next.js 14 static export, trailingSlash, hand-written globals.css, Supabase pinned at exactly 2.25.0, lead form as the only client component.
+
+Content toolchain — two-pass generator on claude-opus-5 with web_search_20260209 locked to your 11 domains via allowed_domains, so the model physically cannot retrieve an off-list source. Server-side refusal fallbacks are on. 14 deterministic gates in validators.js, three attempts, then content/_rejected/.
+
+Pages — homepage (3 citations, 7 FAQs, LocalBusiness + FAQPage) and move-out cleaning (2 citations, 7 FAQs, Service + FAQPage + BreadcrumbList). Both verified: one H1 each, exact title format, correct canonical, zero em-dashes, zero exclamation marks, zero banned words across all built HTML, zero orphans. 8 images converted to WebP.
+
+Three deviations, all small
+The dirty bathroom photo is unused. I looked at it. It is an overflowing toilet surrounded by strewn tissue. On your highest-converting page that reads as disgusting, not as a before shot. Move-out runs without a hero image, which the design already supports. The other seven are placed.
+
+ALLOW_PENDING_BUILD=true escape hatch. Enforcing the gate strictly means a plain npm run build fails while the homepage is unapproved — correct, but it also blocks previewing on a real phone. The flag renders pending pages with a red banner and forced noindex, nofollow, and they stay out of sitemap.xml regardless. Nothing can be indexed without your approval either way.
+
+The About page states the model plainly — leads route to a local crew who set the price. Worth your read; you may want it softer.
+
+Two bugs I found and fixed in my own code along the way: the citation extractor infinite-looped (shared /g regex reset by String.replace) and the sitemap's hardcoded entries bypassed the approval gate.
+
+Interim state
+The homepage and move-out page link to deep-cleaning, recurring-maid, and post-construction, which don't exist yet. Those links 404 until the next four service pages are built. Expected, and it resolves as Phase 1 finishes.
+
+Your move
+Read the four files and delete the review_flags: pending line from each, then npm run approve. The move-out legal section is the one worth reading closely.
+
+Say go and I'll build the remaining four Phase 1 service pages: deep cleaning, recurring maid, Airbnb turnover, post-construction.

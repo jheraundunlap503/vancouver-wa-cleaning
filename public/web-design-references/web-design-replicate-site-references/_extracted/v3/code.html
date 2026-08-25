@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - GreenCleaning</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#191c1d",
+                      "primary-fixed-dim": "#95d3ba",
+                      "on-tertiary-fixed-variant": "#404758",
+                      "secondary-fixed-dim": "#f9bd22",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-container": "#80bea6",
+                      "inverse-surface": "#2e3132",
+                      "on-secondary-fixed-variant": "#5c4300",
+                      "tertiary-fixed": "#dce2f7",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "secondary": "#795900",
+                      "on-primary-fixed-variant": "#0b513d",
+                      "on-error": "#ffffff",
+                      "tertiary": "#272e3e",
+                      "on-secondary-fixed": "#261a00",
+                      "on-tertiary-fixed": "#141b2b",
+                      "on-surface-variant": "#404944",
+                      "secondary-container": "#ffc329",
+                      "surface-variant": "#e1e3e4",
+                      "on-primary-fixed": "#002117",
+                      "surface-container-high": "#e7e8e9",
+                      "inverse-primary": "#95d3ba",
+                      "tertiary-fixed-dim": "#c0c6db",
+                      "primary-container": "#064e3b",
+                      "surface-container-highest": "#e1e3e4",
+                      "surface-container-low": "#f3f4f5",
+                      "surface-container-lowest": "#ffffff",
+                      "primary": "#003527",
+                      "outline": "#707974",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#6f5100",
+                      "primary-fixed": "#b0f0d6",
+                      "surface-tint": "#2b6954",
+                      "surface-dim": "#d9dadb",
+                      "background": "#f8f9fa",
+                      "on-background": "#191c1d",
+                      "surface-bright": "#f8f9fa",
+                      "surface-container": "#edeeef",
+                      "surface": "#f8f9fa",
+                      "outline-variant": "#bfc9c3",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-container": "#aab1c5",
+                      "secondary-fixed": "#ffdf9f",
+                      "tertiary-container": "#3d4455",
+                      "inverse-on-surface": "#f0f1f2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "element-gap": "16px",
+                      "margin-mobile": "20px",
+                      "section-gap": "120px",
+                      "gutter": "24px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "button": [
+                              "Manrope"
+                      ],
+                      "label-bold": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Work Sans"
+                      ],
+                      "body-lg": [
+                              "Work Sans"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "headline-lg": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "button": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "64px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary selection:text-on-primary">
+<!-- Navigation Shell -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300 ease-in-out">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto md:px-margin-desktop px-margin-mobile">
+<a class="text-headline-md font-headline-md font-bold text-primary" href="#">
+                GreenCleaning
+            </a>
+<div class="hidden md:flex items-center space-x-gutter">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:bg-primary-container/10 px-4 py-2 rounded-lg" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:bg-primary-container/10 px-4 py-2 rounded-lg" href="#">Services</a>
+<a aria-current="page" class="text-primary border-b-2 border-primary pb-1 font-button text-button px-4 py-2 rounded-lg" href="#">About us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:bg-primary-container/10 px-4 py-2 rounded-lg" href="#">Blog</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:bg-primary-container/10 px-4 py-2 rounded-lg" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden md:flex items-center justify-center bg-primary text-on-primary font-button text-button px-6 py-3 rounded-full hover:bg-primary/90 transition-colors">
+                    Book Now
+                </button>
+<button class="md:hidden text-on-surface-variant p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Story Section -->
+<section class="py-section-gap px-margin-desktop md:px-margin-desktop px-margin-mobile max-w-container-max mx-auto relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Imagery -->
+<div class="lg:col-span-6 relative h-[600px] rounded-2xl overflow-hidden shadow-sm group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A bright, sunlit modern Vancouver apartment living room with expansive floor-to-ceiling windows showing the city skyline. A professional cleaner in a neat green uniform is carefully dusting a mid-century modern credenza. The scene is shot with high-key lighting, emphasizing a clean, airy, and trustworthy atmosphere typical of premium local services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnNutAsUYEJoDSz62f97hBWdphBf0JDXEkJ4VX1XadzJTylTFuKfj4aUF7M1r6XvmjEJopfKa8XzOFBaD8--fPcR5CuOqh3V0U6cK6JgdmXG6Urk5sEqGMvfIX1dRL-fb1mAJnmib-fSsgjphqKuz_0AtVeOTBcgIyMYHEkA6W-ZJpZLn2cnODo3uyDLVCGHl4jcQv-SpBsHikNDOKC_39ydiXqoahzxdMnFGjg5fEgVV4SkPta4r7"/>
+<!-- Floating Card Overlay -->
+<div class="absolute bottom-8 left-8 bg-surface p-8 rounded-xl shadow-lg max-w-xs z-10 animate-fade-in-up">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body-md text-on-surface font-semibold mb-2">Dedicated to Vancouver</p>
+<p class="font-body-md text-on-surface-variant text-sm">Family owned &amp; operated since 2015.</p>
+</div>
+</div>
+<!-- Text Content -->
+<div class="lg:col-span-5 lg:col-start-8 space-y-8">
+<div>
+<p class="font-label-bold text-label-bold text-primary uppercase tracking-wider mb-4 flex items-center gap-2">
+<span class="w-8 h-px bg-primary inline-block"></span>
+                            Our Story
+                        </p>
+<h1 class="font-display-lg text-display-lg text-on-surface lg:text-display-lg text-headline-lg-mobile mb-6">
+                            Rooted in the Northwest Freshness
+                        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            GreenCleaning Vancouver began with a simple belief: our homes should feel as crisp and restorative as the Pacific Northwest air. As a family-owned business, we started by serving our neighbors in Kitsilano, bringing a personal touch and eco-conscious methods to every home we entered.
+                        </p>
+</div>
+<div class="space-y-6 pt-4 border-t border-outline-variant">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            Today, we’ve grown to serve the broader Vancouver community, but our core remains unchanged. We don't just clean spaces; we restore tranquility. We rely on rigorous standards, sustainable practices, and a team that genuinely cares about the wellbeing of your environment.
+                        </p>
+<div class="flex items-center gap-4">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="A close-up portrait of a friendly, professional female founder of a local business, smiling warmly. She is wearing a subtle green blazer, standing in a well-lit modern office space with soft daylight. The image conveys trust, approachability, and professional competence in a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAvtcEwk8a9hHul7rkwgBFjWynMc1s2YjieowAl7VlVoTqjYkQiGujq9r_a65sh8XgJDVTq5fxl57fDDnsnRa8z88B3dHdJeWrFjmXyV54vV6Q09D5r6awPR4q_4WX9U6yDf-s8HbL7TFmAF95UCNtGWd3-qORhYmfYhY_KFW7-V6Em8u9LFrlfkEVzvbz5S8tM7hraxdgnEdLOZ1WbiHnjTSPYOo2EuSf3fL_PkE-Ercu7eZo39R5"/>
+<div>
+<p class="font-button text-button text-on-surface">Sarah Jenkins</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Founder, GreenCleaning</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Mission & Values Bento Grid -->
+<section class="bg-surface-container-low py-section-gap px-margin-desktop md:px-margin-desktop px-margin-mobile">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-2xl mx-auto">
+<p class="font-label-bold text-label-bold text-primary uppercase tracking-wider mb-4">Our Mission</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface lg:text-headline-lg text-headline-lg-mobile">
+                        Eco-friendly, reliable, and deeply local.
+                    </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Value 1 -->
+<div class="bg-surface p-8 rounded-2xl shadow-sm border border-outline-variant hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-full bg-primary-container/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Eco-Conscious</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We strictly use non-toxic, biodegradable products that are safe for your family, pets, and our local waterways.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface p-8 rounded-2xl shadow-sm border border-outline-variant hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-full bg-primary-container/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Unwavering Reliability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Consistency is our promise. We arrive on time, follow structured checklists, and deliver commercial-grade results every time.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface p-8 rounded-2xl shadow-sm border border-outline-variant hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded-full bg-primary-container/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">location_city</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Community First</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We employ locally, pay living wages, and actively participate in Vancouver community clean-up initiatives.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Equipment Section (Dark Theme Accent) -->
+<section class="bg-primary py-section-gap px-margin-desktop md:px-margin-desktop px-margin-mobile text-on-primary">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<p class="font-label-bold text-label-bold text-primary-fixed-dim uppercase tracking-wider mb-4">Our Equipment</p>
+<h2 class="font-headline-lg text-headline-lg text-on-primary lg:text-headline-lg text-headline-lg-mobile">
+                            Professional tools for immaculate spaces.
+                        </h2>
+</div>
+<button class="bg-secondary-container text-on-secondary-container font-button text-button px-8 py-4 rounded-full hover:bg-secondary-fixed transition-colors whitespace-nowrap">
+                        Explore Full List
+                    </button>
+</div>
+<!-- Horizontal Scroll Snap Container for Equipment Cards -->
+<div class="flex overflow-x-auto snap-x snap-mandatory gap-gutter pb-8 hide-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
+<!-- Equipment Card 1 -->
+<div class="snap-start shrink-0 w-72 md:w-80 bg-primary-container rounded-2xl p-6 group cursor-pointer hover:bg-on-primary-fixed-variant transition-colors border border-on-primary-fixed-variant">
+<div class="aspect-square bg-surface rounded-xl mb-6 flex items-center justify-center p-8 overflow-hidden relative">
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="A high-end, modern commercial vacuum cleaner (Bosch style) shot on a pristine white background. The lighting is studio-quality, highlighting the sleek grey and green plastic casing and professional build quality. The image is clean, sharp, and fits a premium service catalogue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDdB1JHWsjDerip6ahJXBRr0bfxTdwt0CteyTHSFtJeIGi-tvxiTQaRDSnbk7heOTdlAZ6gSf7GPAHH0sQWCCzFGNkwf6oEYrPtJE-iYtlQtQx070ECKeeDkg7JeC5zG6MCG1QLEbsihfQou9q5qGEevy-gofAXTxY8ZFAHi0R2HOmt-qS9nWPhdThZf3TBoY2UU9I5yq_KuVofi8opRpQ5e0JLHX_3HHjvlRa9YZuU0FaW_CcVqkD"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1 text-center">Pro Vac Series 8</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim text-center text-sm">HEPA Filtration Vacuum</p>
+</div>
+<!-- Equipment Card 2 -->
+<div class="snap-start shrink-0 w-72 md:w-80 bg-primary-container rounded-2xl p-6 group cursor-pointer hover:bg-on-primary-fixed-variant transition-colors border border-on-primary-fixed-variant">
+<div class="aspect-square bg-surface rounded-xl mb-6 flex items-center justify-center p-8 overflow-hidden relative">
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="A professional heavy-duty wet/dry industrial vacuum cleaner (Karcher style) with yellow and black accents, isolated on a pure white background. High-key studio lighting emphasizes its durability and robust construction. The aesthetic is clean and industrial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh226ysm6ESYVn32ZUhrueRD85OeSsn1PpeXF3iKWwHbdxhvENBpR90FHmHaJNkooBPYn6p_IpxWPu5oqZ156zHeDgq4hc7jjYgHjUzkfruCfp6g0X-BiqCA0MPSW1SGKkOmPd7r8PW3kJio0K8dBVux59Dn8uxtFK2E7b_dAA1tP8utQgl1bS5zHFpvD6LUxBJDAig--qC9AE00Kfg9EszGcP7c2o5EC7FL1pWJFe0b9IreOY3Zhd"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1 text-center">HydroX 9000</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim text-center text-sm">Wet/Dry Extraction</p>
+</div>
+<!-- Equipment Card 3 -->
+<div class="snap-start shrink-0 w-72 md:w-80 bg-primary-container rounded-2xl p-6 group cursor-pointer hover:bg-on-primary-fixed-variant transition-colors border border-on-primary-fixed-variant">
+<div class="aspect-square bg-surface rounded-xl mb-6 flex items-center justify-center p-8 overflow-hidden relative">
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="A compact, modern walk-behind floor scrubber dryer machine, isolated on a clean white background. The machine is sleek, featuring dark grey and subtle green branding. Studio lighting highlights its professional capability for hard floor cleaning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ4aKJbCvHSCaKdExhLvlmlFRDr-CUfSJSlawtfKAp1WIKa0hIjAwRvAyaNt5ry8ydLHfC_t2lwv2f3vrMS2t3r5SxR4rKBIWtFjyDdRC4mCYNwhjU-A03Ht9Kihz_fLiuad9LGjCvhVQwDSua0S3fkb7loqw_5_-AEwuMqkdNsJoIbYI3uh0zWk1Btil_sOvSEKkYLxkNCabvpew6HVILr_SWfx89FlgkwK7JSXH7IK0DlBkc3qBk"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1 text-center">Gleam Scrubber</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim text-center text-sm">Hard Floor Polisher</p>
+</div>
+<!-- Equipment Card 4 -->
+<div class="snap-start shrink-0 w-72 md:w-80 bg-primary-container rounded-2xl p-6 group cursor-pointer hover:bg-on-primary-fixed-variant transition-colors border border-on-primary-fixed-variant">
+<div class="aspect-square bg-surface rounded-xl mb-6 flex items-center justify-center p-8 overflow-hidden relative">
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="A commercial-grade steam cleaner unit with specialized nozzle attachments, shot on a bright white studio background. The equipment looks highly advanced, clean, and reliable, featuring minimal green accents on a matte grey body." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB095EmchreazNOPo-f_jR1D9RJVD4NYGAS-Pf_xYK9cFHhzlcyYeJZd0z9u9ABMzooD-mAhcTE0s4U3xnmU9_FQqQc5rUoAy_dyRp0pNTSGL5NGSHS4RucAG2RyUA3zz1epGWRf0rnmUSicFU6p7LruCiL9QlEBtHvHIh71tAYYS4QDntm8j-vVgFlUTckOnYmvLA10gyC0h5gdcL7AqT8Dtzve8-FVquffhH56Cnm4H7s0GYtb8-2"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1 text-center">VaporTech Max</h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim text-center text-sm">Deep Steam Sanitizer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Join the Team CTA -->
+<section class="py-section-gap px-margin-desktop md:px-margin-desktop px-margin-mobile bg-surface">
+<div class="max-w-container-max mx-auto bg-surface-container-low rounded-3xl overflow-hidden relative flex flex-col md:flex-row items-center">
+<!-- Background Pattern -->
+<div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, #003527 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="w-full md:w-1/2 p-12 md:p-16 relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface lg:text-headline-lg text-headline-lg-mobile mb-6">
+                        Grow your career with a team that cares.
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-md">
+                        We are always looking for dedicated, meticulous professionals to join our Vancouver family. We offer competitive wages, flexible hours, and a supportive environment.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary font-button text-button px-8 py-4 rounded-full hover:bg-primary/90 transition-colors shadow-sm">
+                            View Open Roles
+                        </button>
+<button class="bg-transparent border border-outline text-on-surface font-button text-button px-8 py-4 rounded-full hover:bg-surface-dim transition-colors">
+                            Learn More
+                        </button>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-80 md:h-[500px] relative">
+<img class="w-full h-full object-cover" data-alt="A diverse team of three professional cleaners in matching stylish green aprons, standing together and smiling confidently in a bright, modern Vancouver office space. They appear happy, supported, and professional. The lighting is warm and inviting, representing a positive company culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwC-eLabfu1dW_J4vbRY2MvVJV_Ee81Hjmb_j-8pyK0PBxKvpI3Fh-IqwIS82HcaHSuxPa9C_T9pDsz-uag3enxt8z1dyaCK4geaimc5Xx98QHshbTWrVaSvYVHRMTzP90z9Jvs-ysm5b64wczgUPdsfrbpVp7Ee7B6LG161yR-h1V174hzbQThjjau3s6Lr7IRYRxDYu5dEQsj4zTZXhXBu2vFwwmY5z_4B9gJF6YHgXG0sZzfdaO"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-primary w-full pt-section-gap pb-8 border-t border-primary-container text-on-primary font-body-md text-body-md opacity-90 hover:opacity-100 transition-opacity">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto mb-16">
+<div class="md:col-span-1">
+<p class="text-headline-md font-headline-md text-on-primary font-bold mb-4">GreenCleaning</p>
+<p class="text-on-primary/80 mb-6">Professional, eco-friendly cleaning services for the Vancouver area.</p>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-on-primary mb-4 uppercase tracking-wider">Company</p>
+<ul class="space-y-3 text-on-primary/80">
+<li><a class="text-secondary-fixed-dim font-bold hover:underline underline-offset-4" href="#">About Us</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors hover:underline underline-offset-4" href="#">Services</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors hover:underline underline-offset-4" href="#">Cleaning Tips</a></li>
+</ul>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-on-primary mb-4 uppercase tracking-wider">Legal</p>
+<ul class="space-y-3 text-on-primary/80">
+<li><a class="hover:text-secondary-fixed transition-colors hover:underline underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors hover:underline underline-offset-4" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<p class="font-label-bold text-label-bold text-on-primary mb-4 uppercase tracking-wider">Connect</p>
+<div class="flex gap-4">
+<!-- Social Icons placeholders -->
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:bg-on-primary-fixed-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:bg-on-primary-fixed-variant transition-colors" href="#">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto border-t border-primary-container pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-on-primary/60">
+<p>© 2024 GreenCleaning Vancouver. All rights reserved.</p>
+</div>
+</footer>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+    </style>
+</body></html>
