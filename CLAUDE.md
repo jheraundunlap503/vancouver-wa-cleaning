@@ -1,7 +1,7 @@
 # CLAUDE.md — Vancouver WA House Cleaning
 ## vancouverwahousecleaning.com
 
-This is a rank-and-rent lead generation site. Ranks on Google for house cleaning searches in Vancouver WA and Clark County. Generates inbound phone leads. Routes to a local contractor. JD and Justin own the domain, tracking number, and lead flow.
+This is a rank-and-rent lead generation site. Ranks on Google for house cleaning searches in Vancouver WA and Clark County. Generates inbound phone leads. Routes to a local contractor. JD owns the domain, tracking number, and lead flow.
 
 ---
 

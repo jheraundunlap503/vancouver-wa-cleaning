@@ -44,7 +44,7 @@ export default function Header({ active }: { active?: string }) {
           <Link href="/contact/" className="header-icon-btn" aria-label="Get a quote">
             <IconSearch />
           </Link>
-          <CallButton className="header-call" label="Book Now" hideNumber />
+          <CallButton className="header-call" label="Book Now" fallbackLabel="Get a Quote" hideNumber />
         </div>
       </div>
     </header>

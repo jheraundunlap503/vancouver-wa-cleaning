@@ -35,6 +35,7 @@ export default function LeadForm({ defaultService }: { defaultService?: string }
     const result = await submitLead({
       name,
       phone,
+      email: String(data.get('email') || '').trim() || undefined,
       service_type: String(data.get('service_type') || '') || undefined,
       zip_code: String(data.get('zip_code') || '').trim() || undefined,
       message: String(data.get('message') || '').trim() || undefined,
@@ -83,6 +84,11 @@ export default function LeadForm({ defaultService }: { defaultService?: string }
       <div className="field">
         <label htmlFor="lf-phone">Phone number</label>
         <input id="lf-phone" name="phone" type="tel" autoComplete="tel" required />
+      </div>
+
+      <div className="field">
+        <label htmlFor="lf-email">Email</label>
+        <input id="lf-email" name="email" type="email" autoComplete="email" />
       </div>
 
       <div className="field">

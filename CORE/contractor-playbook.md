@@ -1,7 +1,7 @@
 # Contractor Playbook — Vancouver WA House Cleaning
 
 ## Current Setup
-- Contractor: Justin's family member
+- Contractor: not yet secured
 - Status: Ready to take calls at launch
 - JD monitors leads manually at start
 - Deal: 10% revenue share on closed job value
@@ -18,7 +18,7 @@
 3. AI phone agent answers 24/7 — gathers name, address, service needed, preferred time
 4. Agent sends SMS to contractor with lead details
 5. Contractor calls back within 2 hours
-6. Job booked — 10% of job value owed to JD/Justin on close
+6. Job booked — 10% of job value owed to JD on close
 
 ## Backup Contractor List (Build Now)
 Search Google Maps: "house cleaning vancouver wa" — look at positions 4-10.
@@ -34,7 +34,7 @@ Target profile: 3-4 star rating, weak website, no page 1 organic presence, local
 - Average recurring maid visit: $150-280 → 10% = $15-28/visit
 - Average move-out clean: $350-650 → 10% = $35-65/job
 - Average deep clean: $280-550 → 10% = $28-55/job
-- 10 recurring clients at $200/visit weekly = $200/mo to JD/Justin
+- 10 recurring clients at $200/visit weekly = $200/mo to JD
 - 1 move-out job/week at $400 = $160/mo at 10%
 
 ## Upsell Path

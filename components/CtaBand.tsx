@@ -15,7 +15,7 @@ export default function CtaBand({
           <h2>{heading}</h2>
           <p>{body}</p>
           <div className="btn-row">
-            <CallButton label="Get a Free Quote" hideNumber />
+            <CallButton label="Call Us Today" fallbackLabel="Get a Free Quote" hideNumber />
             <a className="btn btn-ghost" href="/contact/">
               Request a price online
             </a>

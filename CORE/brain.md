@@ -1,11 +1,11 @@
 # brain.md — Vancouver WA House Cleaning
 
 ## What This Project Is
-A rank-and-rent lead generation website. Ranks on Google for house cleaning searches in Vancouver WA and Clark County suburbs. Generates inbound phone calls and form leads. Routes to a local contractor. JD/Justin own the domain, tracking number, and lead flow.
+A rank-and-rent lead generation website. Ranks on Google for house cleaning searches in Vancouver WA and Clark County suburbs. Generates inbound phone calls and form leads. Routes to a local contractor. JD owns the domain, tracking number, and lead flow.
 
 ## Business Context
-- Operator: JD Dunlap + Justin (Vancouver WA market partner)
-- Contractor: Justin's family member — ready at launch
+- Operator: JD Dunlap, solo. There is no partner. (Corrected 2026-08-25: earlier drafts named a "Justin" who does not exist.)
+- Contractor: NOT YET SECURED. Fulfilment is an open question, see Launch Status below.
 - Deal structure: 10% revenue share on closed jobs
 - Domain: vancouverwahousecleaning.com (flagship Rome site — STAR method)
 - Parked: moveoutcleaningvancouverwa.com — holding page only, aging for future build

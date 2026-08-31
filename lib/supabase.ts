@@ -26,6 +26,7 @@ export function getSupabase(): SupabaseClient | null {
 export type LeadInput = {
   name: string
   phone: string
+  email?: string
   service_type?: string
   zip_code?: string
   message?: string

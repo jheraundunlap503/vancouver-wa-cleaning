@@ -27,7 +27,7 @@ export default function NotFound() {
           ))}
         </ul>
         <div className="btn-row">
-          <CallButton label="Call" />
+          <CallButton label="Call" fallbackLabel="Get a quote" />
         </div>
       </div>
     </section>

@@ -29,12 +29,13 @@ export default function ContactPage() {
             <span className="eyebrow">Get in touch</span>
             <h1>Get a Cleaning Quote</h1>
             <p className="lede">
-              Calling is faster than the form. Either way you get a real number before anything is
-              scheduled.
+              {phoneIsPlaceholder
+                ? 'Send the form and you get a real number back, usually the same day. Nothing is scheduled before you have it.'
+                : 'Calling is faster than the form. Either way you get a real number before anything is scheduled.'}
             </p>
 
             <div className="btn-row">
-              <CallButton label="Call now" hideNumber />
+              <CallButton label="Call now" fallbackLabel="Use the form" hideNumber />
             </div>
 
             <ul className="hero-trust">
