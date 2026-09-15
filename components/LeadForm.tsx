@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { submitLead } from '@/lib/supabase'
-import { services } from '@/lib/site'
+import { services, phoneIsPlaceholder } from '@/lib/site'
 import { IconCheckCircle, IconAlert } from './Icons'
 
 type Status = 'idle' | 'sending' | 'ok' | 'error'
@@ -55,11 +55,17 @@ export default function LeadForm({ defaultService }: { defaultService?: string }
       <div className="lead-form">
         <div className="form-status form-status-ok">
           <IconCheckCircle />
-          <span>Got it. Someone will call you back to confirm the details and give you a price.</span>
+          <span>
+            {phoneIsPlaceholder
+              ? 'Got it. We will reach out to confirm the details and give you a price, usually the same day.'
+              : 'Got it. Someone will call you back to confirm the details and give you a price.'}
+          </span>
         </div>
-        <p className="form-note">
-          If you need an answer sooner than that, calling is faster than the form.
-        </p>
+        {!phoneIsPlaceholder && (
+          <p className="form-note">
+            If you need an answer sooner than that, calling is faster than the form.
+          </p>
+        )}
       </div>
     )
   }
@@ -122,7 +128,7 @@ export default function LeadForm({ defaultService }: { defaultService?: string }
       </button>
 
       <p className="form-note">
-        We use your number to call you back about the cleaning. Nothing else.
+        We use your contact info to reach out about the cleaning you asked about. Nothing else.
       </p>
     </form>
   )
