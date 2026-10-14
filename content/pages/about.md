@@ -10,38 +10,37 @@ slug: about
 hero_image: cleaner-in-kitchen
 hero_alt: House cleaner in a Vancouver WA kitchen with a vacuum and cleaning supplies, ready to start a visit
 intro: >-
-  Most people find a house cleaner the same way. A search, a call that never gets
-  returned, another search, and eventually somebody who shows up once and then
-  cannot be booked again.
+  Vancouver WA House Cleaning is a local cleaning company serving Vancouver and
+  the rest of Clark County. We handle recurring maid service, deep cleans, move
+  out cleans, short term rental turnovers, and post construction cleanup, all
+  priced by the job, with the same people at your house every visit.
 ---
 
 ## What we do
 
-House cleaning in Vancouver and across Clark County. Recurring maid service on a weekly, every other week, or monthly schedule. Deep cleans for houses that have gotten away from their owners. Move out cleans written against a landlord's inspection checklist. Short term rental turnovers. Post construction cleanup after remodels and new builds.
-
-That is the whole list. We do not do carpet extraction, window exteriors above the ground floor, gutters, or pressure washing, and we will tell you that on the phone rather than after you have booked.
+House cleaning for homes in Vancouver and across Clark County, on a recurring schedule or as a one time job.
 
 ## How pricing works
 
-You get a number before anything is scheduled. Not a range, not a starting-at, not an hourly rate that turns into a surprise at the end. Square footage, number of bathrooms, pets, and how long it has been since the house was properly cleaned are enough to quote most homes accurately in a few minutes on the phone.
+You get a number before anything is scheduled. Square footage, number of bathrooms, pets, and how long it has been since the house was properly cleaned are enough to quote most homes accurately in a few minutes on the phone.
 
-Prices are by the job rather than by the hour. An hourly rate rewards working slowly, which is a strange thing to build a business on.
+Every price covers the whole job, so the number you hear on the phone is the number you pay. A flat price rewards finishing the work well.
 
-If a house turns out to be substantially different from how it was described, you get told before the work starts, not after it finishes.
+If a house turns out to be substantially different from how it was described, you hear about it before the work starts.
 
 ## How scheduling works
 
 Recurring clients get the same day and the same people every visit. That matters more than it sounds like it should. By the third visit they know which floors take what, where the vacuum lives, which door sticks, and that the guest bathroom only gets used in December. It is why visit three takes less time and catches more than visit one did.
 
-You do not need to be home, and most people are not. Access gets arranged in advance by key, lockbox, or garage code, agreed before the first visit rather than negotiated on the doorstep.
+Be home or be away, whichever suits your week. Most clients are out during the visit, and some like to be there to say hello. Access gets arranged in advance by key, lockbox, or garage code, and agreed before the first visit.
 
 ## What we do not do
 
-We do not post reviews we did not receive. There is no review markup on this site inventing a star rating out of nothing, which is worth checking on any local service site you are comparing. Right click, view source, search for aggregateRating. It sits on more sites than it should.
+Recurring service runs month to month. Skip a visit, change your cadence, or stop entirely, and you simply come off the schedule.
 
-We do not sell your phone number or add it to a marketing list. It is used to call you back about the cleaning you asked about. The [privacy policy](/privacy-policy/) sets that out in full, including exactly what gets collected and how to have it deleted.
+Carpet extraction, gutters, and pressure washing sit outside our work. We say so on the phone, before anything is booked.
 
-We do not lock anyone into a contract. Recurring service continues because it is working. Skip a visit, change your cadence, or stop entirely, and nothing happens except that you come off the schedule.
+Window exteriors above the ground floor are outside our work as well, and we say so up front.
 
 ## Where we clean
 

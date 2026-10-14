@@ -104,12 +104,10 @@ Cleaning and disinfecting are two different operations, and the order is not opt
 
 On a recurring visit, kitchen and bathroom high touch surfaces get cleaned and then disinfected. Door handles, light switches, faucet handles, the fridge door. Everything else gets cleaned, which is what it needs. A company that tells you it disinfects your entire house every visit is describing something that neither happens nor helps.
 
-## Before You Hire Anyone
+## Need Something Other Than Recurring?
 
-Someone on a recurring schedule is in your house every two weeks, often when you are not. That is worth thirty seconds of checking, and this is not a pitch for us specifically.
+Recurring service is for a home you are living in. If your situation is different, one of these is probably the better fit:
 
-Washington keeps business registration and workers compensation status on the public record. You can look up any cleaning company operating in this state through the [Labor and Industries verification tool](https://lni.wa.gov/licensing-permits/contractors/hiring-a-contractor/verify-contractor-tradesperson-business) before you hand over a key. Ask for the legal business name. Anyone who gets cagey about giving you one has told you what you needed to know.
-
-## Related Work
-
-The first visit on any recurring schedule is a [deep clean](/services/deep-cleaning-vancouver-wa/). If you are ending a tenancy rather than settling into one, that is a [move out clean](/services/move-out-cleaning-vancouver-wa/). If the property is a short term rental rather than a home, the schedule is driven by bookings and that is [Airbnb turnover cleaning](/services/airbnb-turnover-cleaning-vancouver-wa/).
+- **Catching up on a house that has gotten away from you:** a [deep clean](/services/deep-cleaning-vancouver-wa/). It is also what the first visit of any recurring schedule is.
+- **Moving out of a rental:** a [move out clean](/services/move-out-cleaning-vancouver-wa/), written against your landlord's inspection checklist.
+- **Cleaning a short term rental between guests:** [Airbnb turnover cleaning](/services/airbnb-turnover-cleaning-vancouver-wa/), scheduled around your bookings.

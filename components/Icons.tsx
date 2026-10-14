@@ -158,6 +158,23 @@ export function IconShield({ className }: IconProps) {
   )
 }
 
+export function IconClose({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} stroke="currentColor">
+      <path d="M18 6 6 18M6 6l12 12" />
+    </svg>
+  )
+}
+
+export function IconPin({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} stroke="currentColor">
+      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  )
+}
+
 /** Hard hat, for post construction. */
 export function IconHardHat({ className }: IconProps) {
   return (

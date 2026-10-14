@@ -10,7 +10,7 @@ import CtaBand from '@/components/CtaBand'
 import FaqSection from '@/components/FaqSection'
 import JsonLd from '@/components/JsonLd'
 import PendingBanner from '@/components/PendingBanner'
-import ArticleSections from '@/components/ArticleSections'
+import ServiceSections from '@/components/ServiceSections'
 import FeatureBar from '@/components/FeatureBar'
 import ServiceCards from '@/components/ServiceCards'
 import StatBar from '@/components/StatBar'
@@ -23,6 +23,14 @@ type Art = {
   heroAlt: string
   /** Transparent cut-out figures stand on the baseline instead of being framed. */
   cutout?: boolean
+  /** Amber hero button instead of emerald. */
+  ctaYellow?: boolean
+  /** Quote banner after the section at this index. */
+  banner?: { afterIndex: number; heading: string; accent: string; body: string }
+  /** Key figures strip, keyed by the H2 it sits under. */
+  stats?: Record<string, { value: string; label: string }[]>
+  /** Booking button inside the section with this H2. */
+  sectionCta?: { heading: string; label: string }
   /** Dropped into the article body so the prose is not an unbroken wall. */
   body: string
   bodyAlt: string
@@ -31,6 +39,21 @@ type Art = {
 
 const ART: Record<string, Art> = {
   'move-out-cleaning-vancouver-wa': {
+    ctaYellow: true,
+    banner: {
+      afterIndex: 1,
+      heading: 'Book your move out clean',
+      accent: 'before the walkthrough',
+      body: 'Tell us the size of the unit and the move out date. We will quote it in a few minutes.',
+    },
+    sectionCta: { heading: 'When to Book', label: 'Book Your Move Out Clean' },
+    stats: {
+      'What Washington Law Says About Your Deposit': [
+        { value: 'RCW 59.18.280', label: 'The statute that controls deposits' },
+        { value: '30 days', label: 'To send an itemized written statement' },
+        { value: 'Up to 2x', label: 'Deposit a court may award for intentional refusal' },
+      ],
+    },
     hero: 'clean-kitchen-remodel',
     heroAlt: 'Kitchen left inspection ready after a move out cleaning in Vancouver WA',
     body: 'contemporary-bathroom',
@@ -48,6 +71,13 @@ const ART: Record<string, Art> = {
     hero: 'cleaner-with-apron',
     heroAlt: 'House cleaner in Vancouver WA in uniform and apron with a microfiber cloth',
     cutout: true,
+    ctaYellow: true,
+    banner: {
+      afterIndex: 0,
+      heading: 'Get your price',
+      accent: 'per visit',
+      body: 'Weekly, every other week, or monthly. Tell us about the house and we will quote it in a few minutes.',
+    },
     body: 'cleaner-in-kitchen',
     bodyAlt: 'House cleaner in a Vancouver WA kitchen with a vacuum and cleaning supplies',
     bodyCaption: 'The same day and the same people every visit is what makes the rate work.',
@@ -116,7 +146,11 @@ export default async function ServicePage({ params }: Params) {
             <p className="lede">{String(fm.intro || '')}</p>
 
             <div className="btn-row" >
-              <CallButton className="btn btn-primary" label="Get a Free Quote" hideNumber />
+              <CallButton
+                className={art?.ctaYellow ? 'btn btn-call' : 'btn btn-primary'}
+                label="Get a Free Quote"
+                hideNumber
+              />
               <a className="btn btn-secondary" href="/contact/">
                 Request a price
               </a>
@@ -161,8 +195,11 @@ export default async function ServicePage({ params }: Params) {
 
       <StatBar />
 
-      <ArticleSections
+      <ServiceSections
         html={doc.html}
+        banner={art?.banner}
+        stats={art?.stats}
+        sectionCta={art?.sectionCta}
         figure={{
           index: 1,
           key: art?.body || '',
