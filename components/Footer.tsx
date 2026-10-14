@@ -1,5 +1,15 @@
 import Link from 'next/link'
-import { services, servicePath, site, phoneDisplay, phoneHref, phoneIsPlaceholder } from '@/lib/site'
+import {
+  services,
+  servicePath,
+  serviceAreas,
+  areaPath,
+  site,
+  phoneDisplay,
+  phoneHref,
+  phoneIsPlaceholder,
+} from '@/lib/site'
+import { isPublished } from '@/lib/markdown'
 import { IconLeaf } from './Icons'
 
 /**
@@ -58,9 +68,15 @@ export default function Footer() {
             <h4>Service Area</h4>
             <ul>
               <li>Vancouver</li>
-              <li>Camas and Washougal</li>
-              <li>Ridgefield and Battle Ground</li>
-              <li>Salmon Creek and Hazel Dell</li>
+              {serviceAreas.map((a) =>
+                isPublished('locations', a.slug) ? (
+                  <li key={a.slug}>
+                    <Link href={areaPath(a.slug)}>{a.label}</Link>
+                  </li>
+                ) : (
+                  <li key={a.slug}>{a.label}</li>
+                )
+              )}
             </ul>
             {!phoneIsPlaceholder && (
               <p style={{ marginTop: 16 }}>
