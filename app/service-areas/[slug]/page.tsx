@@ -30,6 +30,11 @@ const ART: Record<string, { body: string; bodyAlt: string; bodyCaption: string }
     bodyAlt: 'Kitchen cleaned of construction dust in a new Ridgefield WA home before move-in',
     bodyCaption: 'A move-in clean is scoped for builder residue, not everyday mess.',
   },
+  'salmon-creek-wa': {
+    body: 'cleaner-in-kitchen',
+    bodyAlt: 'House cleaner in a Salmon Creek WA kitchen during a recurring visit',
+    bodyCaption: 'The same crew learning the house is what makes year three faster than year one.',
+  },
 }
 
 export function generateStaticParams() {
