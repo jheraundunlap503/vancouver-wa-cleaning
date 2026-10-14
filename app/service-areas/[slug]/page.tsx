@@ -25,6 +25,11 @@ const ART: Record<string, { body: string; bodyAlt: string; bodyCaption: string }
     bodyAlt: 'House cleaner wiping down furniture during a recurring visit in a Camas WA home',
     bodyCaption: 'The same crew every visit is what makes the custom finishes last.',
   },
+  'ridgefield-wa': {
+    body: 'clean-kitchen-remodel',
+    bodyAlt: 'Kitchen cleaned of construction dust in a new Ridgefield WA home before move-in',
+    bodyCaption: 'A move-in clean is scoped for builder residue, not everyday mess.',
+  },
 }
 
 export function generateStaticParams() {
